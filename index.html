@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Job Listings</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <!-- Filter box -->
+    <div class="filter">
+      <ul class="filter__list">
+        <!-- Format -->
+        <!-- <li class="filter__list-item">
+          <span></span>
+          <svg class="filter__remove" xmlns="http://www.w3.org/2000/svg" width="14" height="14">
+            <path fill="#FFF" fill-rule="evenodd" d="M11.314 0l2.121 2.121-4.596 4.596 4.596 4.597-2.121 2.121-4.597-4.596-4.596 4.596L0 11.314l4.596-4.597L0 2.121 2.121 0l4.596 4.596L11.314 0z"/>
+          </svg> -->
+        </li>
+      </ul>
+
+      <button class="filter__clear">Clear</button>
+    </div>
+  </header>
+
+  <!-- List -->
+  <ul class="list">
+    <!-- Item Start -->
+    <li class="list__item" data-role="frontend" data-level="senior" data-languages="[html, css ,javascript]" data-tools="[]">
+      <div class="list__item--1">
+        <img src="images/Photosnap.svg" alt="Photosnap Logo">
+        <div class="list__item-profile">
+          <span class="list__item-name">
+            Photosnap
+            <span class="list__item-stamps">New!</span>
+            <span class="list__item-stamps">Featured</span>
+          </span>
+          <span class="list__item-title">Senior Frontend Developer</span>
+          <span class="list__item-details">
+            <span>1d ago</span>
+            <span>Full Time</span>
+            <span>USA only</span>
+          </span>
+        </div>
+      </div>
+      <div class="list__item--2">
+        <span data-section="role" class="list__item-skill">Frontend</span>
+        <span data-section="level" class="list__item-skill">Senior</span>
+        <span data-section="languages" class="list__item-skill">HTML</span>
+        <span data-section="languages" class="list__item-skill">CSS</span>
+        <span data-section="languages" class="list__item-skill">JavaScript</span>
+      </div>
+    </li>
+
+    <!-- Item Start -->
+    <li class="list__item" data-role="fullstack" data-level="midweight" data-languages="['python']" data-tools="['react']">
+      <div class="list__item--1">
+        <img src="images/Manage.svg" alt="ManageLogo">
+        <div class="list__item-profile">
+          <span class="list__item-name">
+            Manage
+            <span class="list__item-stamps">New!</span>
+            <span class="list__item-stamps">Featured</span>
+          </span>
+          <span class="list__item-title">Fullstack Developer</span>
+          <span class="list__item-details">
+            <span>1d ago</span>
+            <span>Part Time</span>
+            <span>Remote</span>
+          </span>
+        </div>
+      </div>
+      <div class="list__item--2">
+        <span data-section="role" class="list__item-skill">Fullstack</span>
+        <span data-section="level" class="list__item-skill">Midweight</span>
+        <span data-section="languages" class="list__item-skill">Python</span>
+        <span data-section="tools" class="list__item-skill">React</span>
+      </div>
+    </li>
+
+    <!-- Item Start -->
+    <li class="list__item" data-role="frontend" data-level="junior" data-languages="['javascript']" data-tools="[react, sass]">
+      <div class="list__item--1">
+        <img src="images/Account.svg" alt="Account Logo">
+        <div class="list__item-profile">
+          <span class="list__item-name">
+            Account
+            <span class="list__item-stamps">New!</span>
+          </span>
+          <span class="list__item-title">Junior Frontend Developer</span>
+          <span class="list__item-details">
+            <span>2d ago</span>
+            <span>Part Time</span>
+            <span>USA only</span>
+          </span>
+        </div>
+      </div>
+      <div class="list__item--2">
+        <span data-section="role" class="list__item-skill">Frontend</span>
+        <span data-section="level" class="list__item-skill">Junior</span>
+        <span data-section="languages" class="list__item-skill">JavaScript</span>
+        <span data-section="tools" class="list__item-skill">React</span>
+        <span data-section="tools" class="list__item-skill">Sass</span>
+      </div>
+    </li>
+
+    <!-- Item Start -->
+    <li class="list__item" data-role="frontend" data-level="junior" data-languages="['css', 'javascript']" data-tools="[]">
+      <div class="list__item--1">
+        <img src="images/MyHome.svg" alt="myHome Logo">
+        <div class="list__item-profile">
+          <span class="list__item-name">
+            MyHome
+          </span>
+          <span class="list__item-title">Junior Frontend Developer</span>
+          <span class="list__item-details">
+            <span>5d ago</span>
+            <span>Contract</span>
+            <span>USA only</span>
+          </span>
+        </div>
+      </div>
+      <div class="list__item--2">
+        <span data-section="role" class="list__item-skill">Frontend</span>
+        <span data-section="level" class="list__item-skill">Junior</span>
+        <span data-section="languages" class="list__item-skill">CSS</span>
+        <span data-section="languages" class="list__item-skill">JavaScript</span>
+      </div>
+    </li>
+
+    <!-- Item Start -->
+    <li class="list__item" data-role="fullstack" data-level="midweight" data-languages="['javascript']" data-tools="['sass','react']">
+      <div class="list__item--1">
+        <img src="images/loop-studios.svg" alt="LoopStudios Logo">
+        <div class="list__item-profile">
+          <span class="list__item-name">
+              Loop Studios
+          </span>
+          <span class="list__item-title">
+              Software Engineer
+          </span>
+          <span class="list__item-details">
+            <span>1w ago</span>
+            <span>Full Time</span>
+            <span>Worldwide</span>
+          </span>
+        </div>
+      </div>
+      <div class="list__item--2">
+        <span data-section="role" class="list__item-skill">Fullstack</span>
+        <span data-section="level" class="list__item-skill">Midweight</span>
+        <span data-section="languages" class="list__item-skill">JavaScript</span>
+        <span data-section="tools" class="list__item-skill">Ruby</span>
+        <span data-section="tools" class="list__item-skill">Sass</span>
+      </div>
+    </li>
+
+    <!-- Item Start -->
+    <li class="list__item" data-role="backend" data-level="junior" data-languages="[]" data-tools="['ruby','rnr']">
+      <div class="list__item--1">
+        <img src="images/FaceIt.svg" alt="FaceIt Logo">
+        <div class="list__item-profile">
+          <span class="list__item-name">
+              FaceIt
+          </span>
+          <span class="list__item-title">
+              Junior Backend Developer
+          </span>
+          <span class="list__item-details">
+            <span>2w ago</span>
+            <span>Full Time</span>
+            <span>UK only</span>
+          </span>
+        </div>
+      </div>
+      <div class="list__item--2">
+        <span data-section="role" class="list__item-skill">Backend</span>
+        <span data-section="level" class="list__item-skill">Junior</span>
+        <span data-section="tools" class="list__item-skill">Ruby</span>
+        <span data-section="tools" class="list__item-skill">RoR</span>
+      </div>
+    </li>
+
+    <!-- Item Start -->
+    <li class="list__item" data-role="frontend" data-level="junior" data-languages="['javascript','html']" data-tools="['sass']">
+      <div class="list__item--1">
+        <img src="images/Shortly.svg" alt="Shortly Logo">
+        <div class="list__item-profile">
+          <span class="list__item-name">
+              Shortly
+          </span>
+          <span class="list__item-title">
+              Junior Developer
+          </span>
+          <span class="list__item-details">
+            <span>2w ago</span>
+            <span>Full Time</span>
+            <span>Worldwide</span>
+          </span>
+        </div>
+      </div>
+      <div class="list__item--2">
+        <span data-section="role" class="list__item-skill">Frontend</span>
+        <span data-section="level" class="list__item-skill">Junior</span>
+        <span data-section="languages" class="list__item-skill">HTML</span>
+        <span data-section="languages" class="list__item-skill">JavaScript</span>
+        <span data-section="tools" class="list__item-skill">Sass</span>
+      </div>
+    </li>
+
+    <!-- Item Start -->
+    <li class="list__item" data-role="frontend" data-level="junior" data-languages="['javascript']" data-tools="['sass','vue']">
+      <div class="list__item--1">
+        <img src="images/Insure.svg" alt="Insure Logo">
+        <div class="list__item-profile">
+          <span class="list__item-name">
+              Insure
+          </span>
+          <span class="list__item-title">
+              Junior Frontend Developer
+          </span>
+          <span class="list__item-details">
+            <span>2w ago</span>
+            <span>Full Time</span>
+            <span>USA only</span>
+          </span>
+        </div>
+      </div>
+      <div class="list__item--2">
+        <span data-section="role" class="list__item-skill">Frontend</span>
+        <span data-section="level" class="list__item-skill">Junior</span>
+        <span data-section="languages" class="list__item-skill">JavaScript</span>
+        <span data-section="tools" class="list__item-skill">Vue</span>
+        <span data-section="tools" class="list__item-skill">Sass</span>
+      </div>
+    </li>
+
+    <!-- Item Start -->
+    <li class="list__item" data-role="fullstack" data-level="midweight" data-languages="['javascript','python']" data-tools="['django']">
+      <div class="list__item--1">
+        <img src="images/Eyecam-co.svg" alt="Eyecam Co. Logo">
+        <div class="list__item-profile">
+          <span class="list__item-name">
+              Eyecam Co.
+          </span>
+          <span class="list__item-title">
+              Full Stack Engineer
+          </span>
+          <span class="list__item-details">
+            <span>3w ago</span>
+            <span>Full Time</span>
+            <span>Worldwide</span>
+          </span>
+        </div>
+      </div>
+      <div class="list__item--2">
+        <span data-section="role" class="list__item-skill">Fullstack</span>
+        <span data-section="level" class="list__item-skill">Midweight</span>
+        <span data-section="languages" class="list__item-skill">JavaScript</span>
+        <span data-section="languages" class="list__item-skill">Python</span>
+        <span data-section="tools" class="list__item-skill">Django</span>
+      </div> 
+    </li>
+
+    <!-- Item Start -->
+    <li class="list__item" data-role="frontend" data-level="junior" data-languages="['javascript']" data-tools="['sass']">
+      <div class="list__item--1">
+        <img src="images/the-air-filter-company.svg" alt="The Air Filter Company Logo">
+        <div class="list__item-profile">
+          <span class="list__item-name">
+              The Air Filter Company
+          </span>
+          <span class="list__item-title">
+              Front-end Dev
+          </span>
+          <span class="list__item-details">
+            <span><mo ago/span>
+            <span>Part Time</span>
+            <span>Worldwide</span>
+          </span>
+        </div>
+      </div>
+      <div class="list__item--2">
+        <span data-section="role" class="list__item-skill">Frontend</span>
+        <span data-section="level" class="list__item-skill">Junior</span>
+        <span data-section="languages" class="list__item-skill">JavaScript</span>
+        <span data-section="tools" class="list__item-skill">React</span>
+        <span data-section="tools" class="list__item-skill">Sass</span>
+      </div>
+    </li>
+  </ul>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/AdekolaThanni">Adekola Thanni</a>.
+  </div>
+
+  <script src="js/jquery-3.6.0.slim.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

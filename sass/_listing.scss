@@ -1,0 +1,155 @@
+.list {
+    max-width: 100rem;
+    margin: 0 auto;
+
+    @media only screen and (max-width: $bp-large) {
+        max-width: 50rem;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+        background-color: $light-grayish-cyan-filter;
+        box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+
+        @media only screen and (max-width: $bp-large) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+
+            @media only screen and (max-width: $bp-large) {
+                margin-bottom: 5rem;
+            } 
+        }
+
+        &:nth-child(1), &:nth-child(2) {
+            border-left: .3rem solid $desaturated-dark-cyan;
+        }
+
+        &--1 {
+            margin-right: 10rem;
+            display: flex;
+            height: 8rem;
+            
+            @media only screen and (max-width: $bp-large) {
+                padding-bottom: 3rem;
+                border-bottom: 1px solid $dark-grayish-cyan;
+                margin-right: 0;
+                width: 90%;
+                position: relative;
+                flex-direction: column;
+                align-items: flex-start;
+                height: fit-content;
+            }
+
+            & > img {
+
+                @media only screen and (max-width: $bp-large) {
+                    width: 5rem;
+                    position: absolute;
+                    top: -4.5rem;
+                    left: 1rem;
+                }                
+            }
+        }
+
+        &--2{
+
+
+            @media only screen and (max-width: $bp-large) {
+                padding-top: 1rem;
+                max-width: 90%;
+            } 
+        }
+    }
+
+    &__item-profile {
+        margin-left: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-self: stretch;
+
+        @media only screen and (max-width: $bp-large) {
+            margin-left: 0;
+            margin-top: 1.5rem;
+        } 
+    }
+
+    &__item-name {
+        color: $desaturated-dark-cyan;
+        font-weight: 400;
+    }
+
+    &__item-stamps {
+        font-size: 1rem;
+        color: $light-grayish-cyan;
+        text-transform: uppercase;
+        padding: .3rem;
+        border-radius: 1rem;
+    }
+    
+    &__item-stamps:last-child {
+        background-color: $very-dark-grayish-cyan;
+        margin-right: .5rem;
+    }
+
+    &__item-stamps:first-child {
+        background-color: $desaturated-dark-cyan;
+        margin-left: 1rem;
+    }
+
+    &__item-title {
+        color: $very-dark-grayish-cyan;
+        font-weight: 700;
+        cursor: pointer;
+
+        &:hover {
+            color: $desaturated-dark-cyan;
+        }
+
+        @media only screen and (max-width: $bp-large) {
+            margin:1rem 0 1.3rem;
+        } 
+    }
+
+    &__item-details {
+        color: $dark-grayish-cyan;
+
+        & > span:not(:last-child)::after {
+            content: ".";
+            font-weight: 700;
+            display: inline-block;
+            transform: translateY(-.3rem);
+            margin: 0 .8rem;
+        }
+    }
+
+    &__item-skill {
+        display: inline-block;
+        background-color: hsla(180, 23%, 89%, 0.952);
+        color: $desaturated-dark-cyan;
+        padding: .5rem;
+        border-radius: .5rem;
+        cursor: pointer;
+        transition: all .2s;
+        
+        &:not(:last-child){
+            margin-right: 2rem;
+        }
+
+        &:hover {
+            background-color: $very-dark-grayish-cyan;
+            color: hsla(180, 23%, 89%, 0.952);
+        }
+
+        @media only screen and (max-width: $bp-large) {
+            margin-top: 1rem;
+        } 
+    }
+}

@@ -1,0 +1,124 @@
+// Declare sass variables
+$desaturated-dark-cyan: hsl(180, 29%, 50%);
+$light-grayish-cyan: hsl(180, 52%, 96%);
+$light-grayish-cyan-filter: hsl(180, 31%, 95%);
+$dark-grayish-cyan: hsl(180, 8%, 52%);
+$very-dark-grayish-cyan: hsl(180, 14%, 20%);
+
+$bp-largest: 62.5em;
+$bp-large: 50em;
+
+// reset defaults
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html { 
+    font-size: 62.5%;
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 50%;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 62.5%;
+    }
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    background-color: $light-grayish-cyan;
+    padding: 0 2rem;
+}
+
+ul {
+    list-style: none;
+}
+
+.header {
+    height: 20vh;
+    background-image: url("../images/bg-header-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $desaturated-dark-cyan;
+    margin: 0 -2rem 5rem;
+}
+
+.attribution {
+    color: $desaturated-dark-cyan;
+    margin: 2rem auto 1rem;
+    width: fit-content;
+    text-align: center;
+}
+.attribution a {
+    color: $very-dark-grayish-cyan; 
+    text-decoration: none;
+}
+
+.filter {
+    max-width: 100rem;
+    background-color: $light-grayish-cyan-filter;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+    margin: 0 auto 2rem;
+    transform: translateY(16vh);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    display: none;
+
+    @media only screen and (max-width: $bp-large) {
+        max-width: 90%;
+        min-width: 80%;
+        transform: translateY(10vh);
+    } 
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 80%;
+    }
+
+    &__list-item {
+        background-color: hsla(180, 23%, 89%, 0.952);
+        color: $desaturated-dark-cyan;
+        padding-left: .5rem;
+        display: flex;
+        align-items: center;
+        height: 2.5rem;
+        margin: .25rem 0;
+
+        &:not(:last-child){
+            margin-right: 2rem;
+        }
+    }
+
+    &__remove {
+        margin-left: 1rem;
+        background-color: $desaturated-dark-cyan;
+        height: 100%;
+        padding: .5rem .7rem;
+        cursor: pointer;
+        transition: all .2s;
+        width: 3rem;
+        
+        &:hover {
+            background-color: $very-dark-grayish-cyan;
+        }
+    }
+
+    &__clear {
+        border: none;
+        background-color: transparent;
+        color: $desaturated-dark-cyan; 
+        transition: all .2s;
+        cursor: pointer;
+
+        &:hover {
+            border-bottom: 1px solid $desaturated-dark-cyan;
+        }
+    }
+}
